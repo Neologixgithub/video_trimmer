@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-video-trimmer",
+  "version": "1.0.0",
+  "description": "Cordova Video Trimmer Plugin",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cordova": {
+    "id": "cordova-plugin-video-trimmer",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "video"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neologixgithub/video_trimmer.git"
+  },
+  "keywords": []
+}

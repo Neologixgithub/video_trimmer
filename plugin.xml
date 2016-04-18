@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-video-trimmer" version="1.0.8" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>VideoTrimmer</name>
+    <description>A plugin to trim video based on size</description>
+    <keywords>cordova,video</keywords>
+    <repo>https://github.com/Neologixgithub/video_trimmer.git</repo>
+
+
+    <js-module name="VideoEditor" src="www/VideoEditor.js">
+        <clobbers target="VideoEditor" />
+    </js-module>
+
+    <js-module name="VideoEditorOptions" src="www/VideoEditorOptions.js">
+        <clobbers target="VideoEditorOptions" />
+    </js-module>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="VideoEditor">
+                <param name="android-package" value="org.apache.cordova.videoeditor.VideoEditor" />
+            </feature>
+        </config-file>
+        <!-- add android-ffmpeg-java lib -->
+        <framework src="src/android/android-ffmpeg-java" custom="true" />
+        <!-- add plugin class -->
+        <source-file src="src/android/VideoEditor.java" target-dir="src/org/apache/cordova/videoeditor" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="VideoEditor">
+                <param name="ios-package" value="VideoEditor"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/VideoEditor.h" />
+        <source-file src="src/ios/VideoEditor.m" />
+
+        <header-file src="src/ios/SDAVAssetExportSession.h" />
+        <source-file src="src/ios/SDAVAssetExportSession.m" />
+
+        <framework src="AssetsLibrary.framework" />
+        <framework src="AVFoundation.framework" />
+        <framework src="MediaPlayer.framework" />
+        <framework src="CoreVideo.framework" />
+    </platform>
+</plugin>
