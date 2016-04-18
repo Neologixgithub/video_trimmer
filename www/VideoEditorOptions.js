@@ -1,10 +1,3 @@
-//
-//  VideoEditorOptions.js
-//
-//  Created by Josh Bavari on 01-14-2014
-//  Modified by Ross Martin on 01-29-15
-//
-
 var VideoEditorOptions = {
     OptimizeForNetworkUse: {
         NO: 0,

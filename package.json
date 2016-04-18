@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-video-trimmer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova Video Trimmer Plugin",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
