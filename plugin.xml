@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-plugin-video-trimmer" version="1.0.8" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>VideoTrimmer</name>
-    <description>A plugin to trim video based on size</description>
-    <keywords>cordova,video</keywords>
+    <name>VideoEditor</name>
+    <description>A plugin to assist in video editing tasks</description>
+    <keywords>cordova,video,editing,transcoding,encoding</keywords>
     <repo>https://github.com/Neologixgithub/video_trimmer.git</repo>
+    <license>MIT for iOS, GPL for Android, Apache 2.0 for Windows</license>
 
 
     <js-module name="VideoEditor" src="www/VideoEditor.js">
@@ -50,4 +51,5 @@
         <framework src="MediaPlayer.framework" />
         <framework src="CoreVideo.framework" />
     </platform>
+
 </plugin>

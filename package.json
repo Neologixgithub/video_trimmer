@@ -14,11 +14,31 @@
   },
   "keywords": [
     "cordova",
-    "video"
+    "video",
+    "editing",
+    "editor",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Neologixgithub/video_trimmer.git"
   },
-  "keywords": []
+  "contributors": [
+    {
+      "name": "Josh Bavari",
+      "web": "https://twitter.com/jbavari",
+      "email": "jbavari@gmail.com"
+    },
+    {
+      "name": "Ross Martin",
+      "web": "https://twitter.com/MountainDoofus",
+      "email": "rmartin311@gmail.com"
+    }
+  ],
+  "keywords": [],
+  "author": "Josh Bavari",
+  "license": "MIT"
 }
